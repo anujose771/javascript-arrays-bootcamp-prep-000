@@ -8,7 +8,8 @@ function addElementToBeginningOfArray(array,element){
 addElementToBeginningOfArray([1], 'foo');
 
 function addElementToEndOfArray(array,element){
-  var a = array;
+  var a = new Array();
+  a = array;
   a.push(element);
   return a;
 }
