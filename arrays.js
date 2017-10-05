@@ -35,3 +35,21 @@ destructivelyAddElementToBeginningOfArray([1], 'foo');
     return array;
   }
   destructivelyRemoveElementFromBeginningOfArray([1, 2, 3]);
+
+function removeElementFromBeginningOfArray(array){
+  array = array.slice(1)
+  return array;
+}
+removeElementFromBeginningOfArray([1, 2, 3]);
+
+function destructivelyRemoveElementFromEndOfArray(array){
+  array = array.pop();
+  return array;
+}
+destructivelyRemoveElementFromEndOfArray([1, 2, 3])
+
+  function removeElementFromEndOfArray(array){
+    return array.slice(0,array.length-1);
+  }
+removeElementFromEndOfArray([1, 2, 3]);
+
