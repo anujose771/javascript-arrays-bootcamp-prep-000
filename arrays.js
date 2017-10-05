@@ -5,27 +5,27 @@ function addElementToBeginningOfArray(array,element){
    a.unshift(element);
    return a;
  }
-addElementToBeginningOfArray(chocolateBars, 'foo');
+addElementToBeginningOfArray([1], 'foo');
 
 function addElementToEndOfArray(array,element){
   var a = array;
   a.push(element);
   return a;
 }
-addElementToEndOfArray(chocolateBars, 'foo');
+addElementToEndOfArray([1], 'foo');
 
 
 function destructivelyAddElementToBeginningOfArray(array,element){
   array.unshift(element);
   return array;
 }
-destructivelyAddElementToBeginningOfArray(array,"foo");
+destructivelyAddElementToBeginningOfArray([1], 'foo');
 
   function destructivelyAddElementToEndOfArray(array,element){
     array.push(element);
     return array;
   }
-  destructivelyAddElementToEndOfArray(array,"foo");
+  destructivelyAddElementToEndOfArray([1], 'foo');
 
   function accessElementInArray (array, index){
     return array[index];
